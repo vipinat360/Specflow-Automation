@@ -1,0 +1,12 @@
+﻿{
+	"QA": [
+		{
+			"url": "https://reqres.in"
+		}
+	],
+	"UAT": [
+		{
+			"url": "https://7e8cac1f-5d7b-48e7-82f1-3d2aec9a1e56.mock.pstmn.io"
+		}
+	]
+}

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TransUnion APITest Report</title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa bdd-report dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">9/27/2021 1:41:45 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																				<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">HerokuappAPIDEMO</p> 
+								<p class="duration text-sm">0h:0m:11s+943ms</p> 
+								<span class="datetime">13:41:45 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">HerokuappAPIDEMO</h5>
+										<span class='badge badge-success'>9/27/2021 1:41:45 PM</span>
+										<span class='badge badge-danger'>9/27/2021 1:41:57 PM</span>
+										<span class='badge badge-default'>0h:0m:11s+943ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_01_GET_Filter List of books by First & Last name</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"a2fd57251f460fe"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following parameter in the request for endpoint "/booking"</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Parameter</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">firstname</td></div>
+			<div class="details"><td padding="3px 5px">Mark</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">lastname</td></div>
+			<div class="details"><td padding="3px 5px">Smith</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingParameterInTheRequestForEndpoint&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "GET" request to the "" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking?firstname=Mark&lastname=Smith&#13;&#10;Response Body After GET Request: []&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_02_GET_Get List of Books</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"aed9319a529a1d8"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "GET" request to the "/booking" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking&#13;&#10;Response Body After GET Request: [{"bookingid":58},{"bookingid":57},{"bookingid":71},{"bookingid":68},{"bookingid":2},{"bookingid":15},{"bookingid":43},{"bookingid":11},{"bookingid":45},{"bookingid":44},{"bookingid":50},{"bookingid":35},{"bookingid":27},{"bookingid":62},{"bookingid":53},{"bookingid":36},{"bookingid":31},{"bookingid":48},{"bookingid":42},{"bookingid":1},{"bookingid":69},{"bookingid":30},{"bookingid":54},{"bookingid":70},{"bookingid":32},{"bookingid":17},{"bookingid":52},{"bookingid":40},{"bookingid":56},{"bookingid":12},{"bookingid":4},{"bookingid":25},{"bookingid":7},{"bookingid":10},{"bookingid":22},{"bookingid":13},{"bookingid":3},{"bookingid":14},{"bookingid":65},{"bookingid":34},{"bookingid":29},{"bookingid":39},{"bookingid":20},{"bookingid":64},{"bookingid":8},{"bookingid":67},{"bookingid":47},{"bookingid":55},{"bookingid":61},{"bookingid":60},{"bookingid":41},{"bookingid":24},{"bookingid":33},{"bookingid":9},{"bookingid":51},{"bookingid":18},{"bookingid":23},{"bookingid":46},{"bookingid":19},{"bookingid":38},{"bookingid":6},{"bookingid":37},{"bookingid":5},{"bookingid":66},{"bookingid":21},{"bookingid":16},{"bookingid":26}]&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_03_POST_Create new Book</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"673da768265470e"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following body in request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">type</th></div>
+			<div class="details"><th padding="3px 5px">Body</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Json</td></div>
+			<div class="details"><td padding="3px 5px">{"firstname" : "Naved","lastname" : "Ali","totalprice" : 111,"depositpaid" : true,"bookingdates" : {"checkin" : "2021-01-01","checkout" : "2021-07-08"},"additionalneeds" : "Breakfast"}</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingBodyInRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "POST" request to the "/booking" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking&#13;&#10;Response Body After POST Request: {"bookingid":72,"booking":{"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I store "bookingid" attribute value in "bookingid" variable for future use</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIStoreAttributeValueInVariableForFutureUse&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_04_GET_Verify the newly created Book details</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"dbc5afaa0e1680b"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "GET" request to the "/booking/{bookingid}" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking/72&#13;&#10;Response Body After GET Request: {"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify "bookingid" is "not" available in the response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyIsAvailableInTheResponse&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify "firstname" is "" available in the response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyIsAvailableInTheResponse&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "firstname" has "Naved" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of firstname is: Naved&#13;&#10;Expected Value is : Naved&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "lastname" has "Ali" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of lastname is: Ali&#13;&#10;Expected Value is : Ali&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "bookingdates.checkin" has "2021-01-01" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of bookingdates.checkin is: 2021-01-01&#13;&#10;Expected Value is : 2021-01-01&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "bookingdates.checkout" has "2021-07-08" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"Naved","lastname":"Ali","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2021-01-01","checkout":"2021-07-08"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of bookingdates.checkout is: 2021-07-08&#13;&#10;Expected Value is : 2021-07-08&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_05_PUT_Update newly created book using PUT request</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"0df1fbc46e6c94a"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Cookie</td></div>
+			<div class="details"><td padding="3px 5px">token={token}</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following body in request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">type</th></div>
+			<div class="details"><th padding="3px 5px">Body</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Json</td></div>
+			<div class="details"><td padding="3px 5px">{"firstname" : "NA","lastname" : "AL","totalprice" : 123,"depositpaid" : true,"bookingdates" : {"checkin" : "2021-10-10","checkout" : "2021-12-12"},"additionalneeds" : "Breakfast"}</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingBodyInRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "PUT" request to the "/booking/{bookingid}" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking/72&#13;&#10;Response Body After PUT Request: {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: Scenario_06_GET_VerifyTheNewlyUpdatedBookDetails</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given I login to Herokuapp application to get Token using "admin" and "password123"</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.GivenILoginToHerokuappApplicationToGetTokenUsingAnd&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/auth&#13;&#10;Response Body After POST Request: {"token":"b6f4e2805c17e60"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I add following Header in the request</span>
+                            </div>
+			<div class="details"><table border="1px solid black;" style="width: 100%" cellspacing="5px" cellpadding="5px"><tbody></div>
+			<div class="details"><tr><td align="Center" colSpan=2>--- table step argument ---</td></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><th padding="3px 5px">Header</th></div>
+			<div class="details"><th padding="3px 5px">Value</th></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Content-Type</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"><tr></div>
+			<div class="details"><td padding="3px 5px">Accept</td></div>
+			<div class="details"><td padding="3px 5px">application/json</td></div>
+			<div class="details"></tr></div>
+			<div class="details"></tbody></table></div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenIAddFollowingHeaderInTheRequest&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When I submit "GET" request to the "/booking/{bookingid}" endpoint</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.WhenISubmitRequestToTheEndPoint&#13;&#10;Submited URI : https://restful-booker.herokuapp.com/booking/72&#13;&#10;Response Body After GET Request: {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "200" as status code</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusCode&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I should see "OK" as status line</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIShouldSeeAsStatusLine&#13;&#10;Status Line is: OK&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "firstname" has "NA" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of firstname is: NA&#13;&#10;Expected Value is : NA&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "lastname" has "AL" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of lastname is: AL&#13;&#10;Expected Value is : AL&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "totalprice" has "123" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of totalprice is: 123&#13;&#10;Expected Value is : 123&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "bookingdates.checkin" has "2021-10-10" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of bookingdates.checkin is: 2021-10-10&#13;&#10;Expected Value is : 2021-10-10&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then I verify attribute "bookingdates.checkout" has "2021-12-12" value in response</span>
+                            </div>
+			<div class="details"><table border ="1px solid black;" style="width: 100%"><tbody><tr><td style ="color : Yellow" align="Center">LOGS:</td></tr><tr><td><textarea readonly style="background-color: gray">-> done : HerokuappAPIDEMOSteps.ThenIVerifyAttributeHasValueInResponse&#13;&#10;Response body is {"firstname":"NA","lastname":"AL","totalprice":123,"depositpaid":true,"bookingdates":{"checkin":"2021-10-10","checkout":"2021-12-12"},"additionalneeds":"Breakfast"}&#13;&#10;application/json; charset=utf-8&#13;&#10;The value of bookingdates.checkout is: 2021-12-12&#13;&#10;Expected Value is : 2021-12-12&#13;&#10;Condition Value is True&#13;&#10;</textarea></td></tr></tbody></table></div>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Features</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='100%'>
+	                    <b>1</b> features passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='0%'><b>0</b> features failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Scenarios</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='child-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='100%'><b>6</b> scenarios passed</small></div>
+	                <div>
+	                    <small data-tooltip='0%'><b>0</b> scenarios failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+				<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Steps</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='grandchild-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='100%'><b>46</b> steps passed</small></div>
+	                <div>
+	                    <small data-tooltip='0%'><b>0</b> steps failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Features</h6>
+							<h2 class="font-size-28 font-weight-light">1</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>100%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Scenarios</h6>
+							<h2 class="font-size-28 font-weight-light">6</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>100%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">9/27/2021 1:41:45 PM</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:00:11.9548033</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 1,
+		passParent: 1,
+		failParent: 0,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 0,
+		childCount: 6,
+		passChild: 6,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 46,
+		passGrandChild: 46,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

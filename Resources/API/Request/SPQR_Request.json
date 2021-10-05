@@ -1,0 +1,78 @@
+﻿{
+    "header": {
+        "dataContractName": "WAG",
+        "originatorCode": "WAG",
+        "transactionId": null,
+        "dateTimeStamp": "04/09/2020 06:10:32"
+    },
+    "notificationData": {
+        "name": "SKY",
+        "code": "83758",
+        "orderNumber": "0",
+        "applicationDate": "04/09/2020",
+        "receivedDate": "04/09/2020",
+        "messageType": "C",
+        "messageDate": "04/09/2020 06:10:32",
+        "overallResponse": "OK",
+        "errors": null,
+        "availability": {
+            "availabilityResult": "GREEN",
+            "serviceIdentifier": {
+                "eircode": "Y35D2T8",
+                "teleNo": null
+            },
+            "availServices": {
+                "availService": [
+                    {
+                        "serviceClass": "NFIB",
+                        "serviceDate": null,
+                        "serviceResult": "GREEN",
+                        "serviceStatus": "AVAILABLE",
+                        "lineId": null,
+                        "thirdPartyCease": null,
+                        "multiplePremises": null,
+                        "pendingInstallation": null,
+                        "qualifiedService": [
+                            {
+                                "serviceCode": "NBICE",
+                                "profileCode": null,
+                                "recommended": "Y"
+                            },
+                            {
+                                "serviceCode": "NBICP",
+                                "profileCode": null,
+                                "recommended": "Y"
+                            },
+                            {
+                                "serviceCode": "NBICS",
+                                "profileCode": null,
+                                "recommended": "Y"
+                            }
+                        ],
+                        "surveyDetails": {
+                            "surveyRequired": "N",
+                            "installationType": "STANDARD"
+                        },
+                        "reservationDetails": null,
+                        "serviceAttributes": {
+                            "attribute": [
+                                {
+                                    "name": "APPOINTMENT_REQUIRED",
+                                    "value": "Y"
+                                },
+                                {
+                                    "name": "APPOINTMENT_TYPE",
+                                    "value": "INSTALLATION"
+                                }
+                            ]
+                        },
+                        "internalAvail": null
+                    }
+                ]
+            }
+        },
+        "primaryService": null,
+        "rejectReason": null,
+        "rawResults": null
+    }
+}
